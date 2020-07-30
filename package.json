@@ -1,0 +1,28 @@
+{
+  "name": "textalive-app-dance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "parcel src/index.html --out-dir dev",
+    "build": "parcel build src/index.html --public-url ./ --out-dir htdocs --no-source-maps",
+    "clean": "del-cli dev htdocs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "textalive-api": "^0.14.4",
+    "three": "^0.117.1",
+    "three.meshline": "^1.2.0"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-asset-copier": "^1.1.0",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "typescript": "^3.9.5"
+  },
+  "assetsPath": "src/assets"
+}
