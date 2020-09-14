@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { CCDIKSolver } from "three/examples/jsm/animation/CCDIKSolver";
 
-import { Ease } from "../../../textalive-app-main/src/util/Ease";
+import { Ease } from "../util/Ease";
 import { MathExt } from "../util/MathExt";
 import { ModelId } from "../constant/ModelId";
 import { Ref } from "../core/Ref";

@@ -1,6 +1,5 @@
 import dat from "dat.gui";
-import { Player } from "textalive-api";
-import { Video, Char, Phrase, Color } from "textalive-graphics";
+import { Player, IVideo } from "textalive-app-api";
 
 import { SegData } from "../model/SegData";
 import { Ref } from "../core/Ref";
@@ -12,7 +11,7 @@ import { LyricData } from "../model/LyricData";
 export class PlayerManager
 {
     private _player  :Player;
-    private _video   :Video;
+    private _video   :IVideo;
     private _segList :SegData[];
     private _segLen  :number;
 
@@ -291,7 +290,7 @@ export class PlayerManager
         }
     }
     
-    private _onVideoReady (v: Video) 
+    private _onVideoReady (v: IVideo) 
     {
         console.log("video:", v);
 
@@ -361,10 +360,10 @@ export class PlayerManager
                 {
                     var cd = new CharData(c, pid);
                     this._lyric.add(cd);
-                    c = c.next as Char;
+                    c = c.next;
                 }
                 pid ++;
-                p = p.next as Phrase;
+                p = p.next;
             }
         }
 

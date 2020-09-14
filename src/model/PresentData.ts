@@ -1,6 +1,6 @@
 import { Ref } from "../core/Ref";
 import { SegData } from "./SegData";
-import { Beat } from "textalive-api/dist/player/loaders/songle/SongleParser";
+import { IBeat } from "textalive-app-api";
 
 /**
  * 現在時刻のデータ
@@ -10,7 +10,7 @@ export class PresentData
     public now     :number;
     public segId   :number;
     public segData :SegData;
-    public beat    :Beat;
+    public beat    :IBeat;
     public beatProgress :number;
 
     constructor (now :number = -1)

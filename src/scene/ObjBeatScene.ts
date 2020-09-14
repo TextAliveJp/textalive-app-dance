@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { Ease } from "../../../textalive-app-main/src/util/Ease";
+import { Ease } from "../util/Ease";
 
 import { PresentData } from "../model/PresentData";
 import { MathExt } from "../util/MathExt";

@@ -1,4 +1,4 @@
-import { Char } from "textalive-graphics";
+import { IChar } from "textalive-app-api";
 
 /**
  * 文字データ
@@ -21,7 +21,7 @@ export class CharData
     public next :CharData = null;
     public prev :CharData = null;
 
-    constructor (c :Char, phraseId :number = 0)
+    constructor (c :IChar, phraseId :number = 0)
     {
         this.phraseId = phraseId;
         
