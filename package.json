@@ -7,7 +7,7 @@
   "scripts": {
     "build-dev": "parcel src/index.html --out-dir dev",
     "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps",
-    "clean": "del-cli dev htdocs"
+    "clean": "del-cli .cache dev docs"
   },
   "repository": {
     "type": "git",
