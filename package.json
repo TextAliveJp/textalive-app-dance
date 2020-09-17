@@ -1,19 +1,27 @@
 {
   "name": "textalive-app-dance",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "3Dモデルを使った複雑な処理を含むTextAlive App APIの作例",
   "main": "index.js",
   "scripts": {
     "build-dev": "parcel src/index.html --out-dir dev",
-    "build": "parcel build src/index.html --public-url ./ --out-dir htdocs --no-source-maps",
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps",
     "clean": "del-cli dev htdocs"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TextAliveJp/textalive-app-dance.git"
+  },
+  "keywords": [
+    "textalive"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/TextAliveJp/textalive-app-dance#readme",
   "dependencies": {
     "dat.gui": "^0.7.7",
-    "textalive-app-api": "0.0.6",
+    "textalive-app-api": "^0.1.1",
     "three": "^0.117.1",
     "three.meshline": "^1.2.0"
   },
