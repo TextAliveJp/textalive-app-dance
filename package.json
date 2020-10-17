@@ -21,7 +21,7 @@
   "homepage": "https://github.com/TextAliveJp/textalive-app-dance#readme",
   "dependencies": {
     "dat.gui": "^0.7.7",
-    "textalive-app-api": "^0.1.2",
+    "textalive-app-api": "^0.2.0",
     "three": "^0.117.1",
     "three.meshline": "^1.2.0"
   },
