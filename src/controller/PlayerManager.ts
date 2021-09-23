@@ -130,7 +130,7 @@ export class PlayerManager
                         },
                     ]
                 },
-                mediaElement: document.querySelector("#media"),
+                mediaElement: document.querySelector("#media") as HTMLElement,
                 fontFamilies: []
             });
             
