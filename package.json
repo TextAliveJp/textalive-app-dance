@@ -7,7 +7,7 @@
     "build-dev": "parcel src/index.html --dist-dir dev",
     "build": "parcel build src/index.html --public-url ./ --dist-dir docs --no-source-maps",
     "clean": "del-cli .parcel-cache dev docs",
-    "prebuild": "del-cli docs"
+    "prebuild": "del-cli docs && cd src/assets && copyfiles ./**/* ../../docs"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,9 @@
     "three.meshline": "^1.2.0"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "del-cli": "^4.0.1",
     "parcel": "^2.0.0-beta.3.1",
-    "parcel-plugin-asset-copier": "^1.1.0",
     "typescript": "^4.4.3"
-  },
-  "assetsPath": "src/assets"
+  }
 }
