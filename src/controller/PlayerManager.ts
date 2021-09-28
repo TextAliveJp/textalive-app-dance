@@ -53,8 +53,7 @@ export class PlayerManager
         {
             var player = this._player = new Player({
                 app: {
-                    appAuthor: "daniwell",
-                    appName: "Dance",
+                    token: "xVxJokEe7rcbKIdy",
                     parameters: [
                         {
                             title: "フォントのスタイル",
@@ -131,7 +130,7 @@ export class PlayerManager
                         },
                     ]
                 },
-                mediaElement: document.querySelector("#media"),
+                mediaElement: document.querySelector("#media") as HTMLElement,
                 fontFamilies: []
             });
             
